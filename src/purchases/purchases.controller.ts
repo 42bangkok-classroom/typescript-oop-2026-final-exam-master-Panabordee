@@ -4,14 +4,14 @@ import type { ApiResponse } from 'src/interfaces/response.interface';
 import { data } from './purchases.interface';
 
 @Controller('data')
-export class purchasesController {
-  constructor(private readonly purchasesService: ProductsService) {}
+export class PurchasesController {
+  constructor(private readonly PurchasesService: ProductsService) {}
 
   @Get()
   findAll(): ApiResponse<data[]> {
     return {
       success: true,
-      data: this.purchasesService.findAll(),
+      data: this.PurchasesService.findAll(),
       message: 'Fetched products successfully',
     };
   }
