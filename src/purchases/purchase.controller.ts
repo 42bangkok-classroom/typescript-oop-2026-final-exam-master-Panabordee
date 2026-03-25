@@ -12,7 +12,7 @@ export class PurchasesController {
     return {
       success: true,
       data: this.productService.findAll(),
-      message: 'Fetched purchases successfully"',
+      message: 'Fetched purchases successfully',
     };
   }
 }
