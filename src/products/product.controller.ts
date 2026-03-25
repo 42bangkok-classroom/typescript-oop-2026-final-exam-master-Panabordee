@@ -3,7 +3,7 @@ import { ProductsService } from './product.service';
 import type { ApiResponse } from 'src/interfaces/response.interface';
 import { data } from './product.interface';
 
-@Controller('data')
+@Controller('products')
 export class ProductsController {
   constructor(private readonly productsService: ProductsService) {}
 
